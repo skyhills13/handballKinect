@@ -8,6 +8,14 @@ public:
 	Ball(void);
 	~Ball(void);
 
+	void setColor(int hitCount);
+	void isCollided(float posX, float posY);
+	void checkGoalIn(float goalX, float goalY);
+
+
+	void display();
+	void update();
+
 	float positionX;
 	float positionY;
 	//velocity is basically constant
@@ -20,13 +28,8 @@ public:
 	//int colorBlue;
 
 	int hitCount;
-
-	void setPosition(float posX, float posY);
-	void setColor(int hitCount);
-	void isCollided(float posX, float posY);
-
-	void display();
-	void update();
+	//static int mersigi;
 
 };
 
+//extern int goalCount;
